@@ -1,0 +1,607 @@
+/* CSS RESET */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	background: transparent;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* COMMON STYLES */
+
+html, body {
+	background:url(../images/bg.jpg) repeat #000;
+	font:12px Arial;
+	width:100%;
+	height:100%;
+	color:#fff;	
+}
+#wrapper {
+	width:100%;
+	background:url(../images/bgTop.jpg) repeat-x left top;	
+	height:100%;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight:normal;
+	text-shadow: 1px 1px 0px #000;
+}
+h2 {
+	font-size:30px;
+	border-bottom:1px solid #2a2727;
+	padding-bottom:6px;	
+	margin-bottom:20px;
+}
+h3 {
+	font-size:18px;	
+}
+p {
+	margin-bottom:10px;	
+}
+a:link, a:visited {
+	text-decoration:underline;
+	color:#fff;
+}
+a:hover {
+	text-decoration:none;	
+}
+
+/* TOP */
+
+#top {
+	width:980px;
+	height:480px;
+	margin:0 auto;
+	position:relative;	
+	background:url(../images/bgTopIn.jpg) no-repeat center top;
+}
+#top .logo {
+	background:url(../images/logo.png) no-repeat left top;
+	width:149px;
+	height:38px;
+	position:absolute;
+	top:17px;
+	left:0;
+}
+#top #contactMail {
+	position:absolute;
+	top:26px;
+	right:0;	
+	color:#fff;
+	font-size:16px;	
+	text-shadow: 1px 1px 0px #000;
+}
+#top #contactMail a {
+	text-decoration:none;
+	color:#dfdfdf;
+}
+#topSlider li {
+	width:980px;
+	position:relative;
+	height:480px;
+}
+#top #topSlider li .screens {
+	background:url(../images/screens.png) no-repeat left top;
+	width:496px;
+	height:373px;
+	position:absolute;
+	top:105px;
+	left:0;
+}
+#top #topSlider li .mainText {
+	width:450px;
+	position:absolute;
+	right:0;
+	top:140px;
+	font-size:24px;	
+	text-shadow: 1px 1px 0px #000;
+}
+#top #topSlider li .mainText .auBtn:link, #top #topSlider li .mainText .auBtn:visited {
+	background:url(../images/auBtn.png) no-repeat left top;
+	width:160px;
+	height:52px;
+	display:inline-block;
+	cursor:pointer;	
+}
+#top #topSlider li .mainText .auBtn:hover, #top #topSlider li .mainText .auBtn.hover {
+	background:url(../images/auBtnOver.png) no-repeat left top;
+}
+#top a.moreCButton:link, #top a.moreCButton:visited {
+	position:absolute;
+	width:86px;
+	height:86px;
+	background:url(../images/moreOver.png) no-repeat left top;
+	display:inline-block;
+	top:-43px;	
+	left:446px;
+	z-index:9999; 
+	cursor:pointer;
+}
+#top a.moreCButton.hover, #top a.moreCButton:hover {
+	background:url(../images/moreOut.png) no-repeat left top;	
+}
+#top a.hideCButton:link, #top a.hideCButton:visited {
+	position:absolute;
+	width:86px;
+	height:86px;
+	background:url(../images/hideOver.png) no-repeat left top;
+	top:-43px;	
+	left:446px;
+	z-index:9999; 
+	display:none;
+	cursor:pointer;	
+}
+#top a.hideCButton.hover, #top a.hideCButton:hover {
+	background:url(../images/hideOut.png) no-repeat left top;	
+}
+
+/* MAIN FEATURES */
+
+#mainFeaturesCont {
+	width:100%;
+	background:url(../images/mfSpacer.gif) repeat-x left top #000;
+	height:200px;
+	clear:both;
+	display:none;
+}
+#mainFeatures {
+	width:980px;
+	margin:0 auto;	
+	position:relative;
+}
+#mainFeatures .left {
+	width:490px;
+	float:left;
+	height:200px;
+}
+#mainFeatures .left .icon, #mainFeatures .right .icon {
+	float:left;
+	width:110px;
+	text-align:center;
+	position:relative;
+	height:160px;
+	padding:20px 0;
+}
+#mainFeatures .left .icon img, #mainFeatures .right .icon img {
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin:-30px 0 0 -27px;
+}
+#mainFeatures .left .text {
+	float:left;
+	width:330px;	
+	height:160px;
+	padding:20px 0;
+}
+#mainFeatures .right .text {
+	float:left;
+	width:379px;
+	height:160px;
+	padding:20px 0;
+}
+#mainFeatures .right {
+	width:490px;
+	float:left;
+	height:200px;
+}
+#mainFeatures .text h3 {
+	border-bottom:1px solid #2A2727;
+	padding-bottom:5px;
+	margin-bottom:10px;
+	font-size:24px;
+}
+
+/* CONTENT */
+
+#content {
+	margin:0 auto;
+	width:980px;
+	clear:both;
+	padding-top:30px;
+}	
+#content .left {
+	float:left;
+	width:640px;	
+}
+#content .right {
+	float:right;
+	width:300px;	
+}
+#content .left .box {
+	width:300px;
+	float:left;	
+	margin-bottom:30px;
+	height:120px;
+}
+#content .left .box.fRight {
+	float:right;	
+}
+#content .left .box .left {
+	float:left;
+	width:65px;	
+}
+#content .left .box .right {
+	float:left;	
+	width:235px;
+}
+#content .left .box .right h3 {
+	margin-bottom:5px;
+	padding-bottom:3px;
+	border-bottom:1px solid #2a2727;
+}
+#content .right #newsSlider {
+	position:relative;
+	width:300px;
+	height:400px;
+}
+#content .right #newsSlider .viewport { 
+	float: left; 
+	width: 300px;
+	height:400px; 
+	overflow: hidden; 
+	position: relative; 
+}
+#content .right #newsSlider .buttons { 
+	display: block; 
+	margin: 0 0 0 0; 
+	position:absolute;
+	top:-58px;
+	right:30px;
+	background:url(../images/sliderArrows.png) no-repeat left top;
+	width:22px;
+	height:28px;
+	cursor:pointer;
+	text-indent:-9999px;
+}
+#content .right #newsSlider .next { 
+	margin: 0; 
+	background:url(../images/sliderArrows.png) no-repeat right top; 
+	right:0; 
+}
+#content .right #newsSlider .disable { 
+	visibility: hidden; 
+}
+#content .right #newsSlider .overview { 
+	list-style: none; 
+	position: absolute; 
+	padding: 0; 
+	margin: 0; 
+	left: 0; 
+	top: 0; 
+}
+#content .right #newsSlider .overview li.news {
+	width:300px;
+	height:400px;
+	margin-bottom:20px;
+}
+
+#content .right #newsSlider .overview li.news h3 {
+	border-bottom:1px solid #2A2727;
+	padding-bottom:3px;
+}
+#content .right #newsSlider .overview li.news .date {
+	background:url(../images/newsIco.png) no-repeat left center;
+	padding-left:20px;	
+	font-size:10px;
+	margin:15px 0;
+}
+#content .right #newsSlider .overview li.news .lnPic {
+	width:300px;
+	height:100px;
+	background:url(../images/lnBg.jpg) no-repeat left top;
+	margin:10px 0;	
+}
+#content .right #newsSlider .overview li.news .lnPic img {
+	display:block;
+	padding:5px;	
+}
+.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+/* PRICING TABLE */
+
+#pricingTable {
+	width:980px;
+	margin:0 auto 30px auto;
+	clear:both;
+}
+#tableWrapper {
+	width:980px;	
+}	
+#pricingTable table {
+	width:980px;	
+	border:none;
+	padding:0;
+	margin:0;
+	table-layout:fixed;
+}
+#pricingTable table tr {
+	width:980px;
+	display:block;
+	float:left;
+	position:relative;
+}	
+#pricingTable table tr td, #pricingTable table tr th {
+	display:inline-block;
+	float:left;
+	vertical-align:top;
+}
+#pricingTable table tr.topCols {
+	font-size:24px;
+}
+#pricingTable table tr.topCols {
+	background:none;
+}
+#pricingTable table tr.topCols th {
+	height:40px;
+	text-align:center;
+	font-weight:normal;
+	text-shadow: 1px 1px 0px #000;
+	width:195px;
+}
+#pricingTable table tr.topCols th.col1 {
+	text-align:left;
+	padding:30px 10px 0 10px;	
+	width:180px;
+	height:40px;
+	text-align:right;
+}
+#pricingTable table tr.topCols th.col2 {
+	height:37px;
+	padding:33px 0 0;
+	background:url(../images/table/greenTop.png) no-repeat right bottom;
+}
+#pricingTable table tr.topCols th.col3 {
+	height:37px;
+	padding:33px 0 0;
+	background:url(../images/table/orangeTop.png) no-repeat 0 bottom;
+}
+#pricingTable table tr.topCols th.col4 {	
+	height:47px;
+	padding:23px 0 0;
+	background:url(../images/table/redTop.png) no-repeat 0 bottom;
+	font-size:30px;
+}
+#pricingTable table tr.topCols th.col5 {
+	height:37px;
+	padding:33px 0 0;
+	background:url(../images/table/violetTop.png) no-repeat 0 bottom;
+}
+#pricingTable table tr.first {
+	background:url(../images/table/rowFirst.png) no-repeat 0 0;	
+	/*height:40px;
+	line-height:40px;*/
+}
+#pricingTable table tr.first.firstRow {
+	background:url(../images/table/firstRow.png) no-repeat 0 0;
+}
+#pricingTable table tr.odd {
+	background:url(../images/table/rowOdd.png) no-repeat 0 0;	
+	/*height:40px;
+	line-height:40px;*/
+}
+#pricingTable table tr.lastRow {
+	background:url(../images/table/lastRow.png) no-repeat 0 0;
+	height:80px;
+}
+#pricingTable table tr.lastRow td {
+	color:#474747;
+	height: 47px;
+    padding-top: 23px;
+	text-shadow: 0px 1px 0px #fff;
+	font-size:36px;		
+}
+#pricingTable table tr.lastRow td.firstCol {
+	height:50px;	
+	font-size:24px;
+	padding-top:30px;
+}
+#pricingTable table tr.lastRow td.bigBottom {
+	color:#2b2b2b;	
+}
+#pricingTable table tr td {
+	height:40px;	
+	text-align:center;
+	width:195px;
+}
+#pricingTable table tr td img {
+	display:inline-block;
+	margin-top:12px;
+}
+#pricingTable table tr td.firstCol {
+	text-align:right;
+	padding:12px 10px 0 10px;	
+	height:28px;
+	width:180px;
+	text-shadow: 1px 1px 0px #fff;
+	font-size:16px;
+	color:#2b2b2b;
+}
+#pricingTable table tr.bottomCols td {
+	text-align:center;
+	width:195px;
+}
+#pricingTable table tr.bottomCols td.col1Bottom {
+	height:62px;
+	padding-top:8px;
+	width:200px;
+	vertical-align:top;
+}
+#pricingTable table tr.bottomCols td.col2Bottom {
+	height:62px;
+	padding-top:8px;
+	background: url(../images/table/greenBottom.png) no-repeat right top;
+	vertical-align:top;
+}
+#pricingTable table tr.bottomCols td.col3Bottom {	
+	height:62px;
+	padding-top:8px;
+	background: url(../images/table/orangeBottom.png) no-repeat right top;
+	vertical-align:top;
+}
+#pricingTable table tr.bottomCols td.col4Bottom {
+	height:62px;
+	padding-top:8px;
+	background: url(../images/table/redBottom.png) no-repeat right top;	
+	vertical-align:top;
+}
+#pricingTable table tr.bottomCols td.col5Bottom {	
+	height:62px;
+	padding-top:8px;
+	background: url(../images/table/violetBottom.png) no-repeat right top;
+	vertical-align:top;
+}
+#pricingTable table tr.bottomCols td .buyNow:link, #pricingTable table tr.bottomCols td .buyNow:visited {
+	background:url(../images/table/buyNowOut.png) no-repeat left top;
+	width:100px;
+	height:35px;
+	display:block;
+	margin:0 auto;
+	cursor:pointer;
+}
+#pricingTable table tr.bottomCols td .buyNow:hover, #pricingTable table tr.bottomCols td .buyNow.hover {
+	background:url(../images/table/buyNowOver.png) no-repeat left top;	
+}
+#pricingTable table tr.bottomCols td .bigBuyNow:link, #pricingTable table tr.bottomCols td .bigBuyNow:visited {
+	background:url(../images/table/bigBuyNowOut.png) no-repeat left top;
+	width:130px;
+	height:45px;
+	display:block;	
+	margin:0 auto;
+	cursor:pointer;
+}
+#pricingTable table tr.bottomCols td .bigBuyNow:hover, #pricingTable table tr.bottomCols td .bigBuyNow.hover {
+	background:url(../images/table/bigBuyNowOver.png) no-repeat left top;	
+}
+
+/* LATEST WORK */
+
+#latestWork {
+	width:980px;
+	margin:0 auto 40px;
+	clear:both;	
+}
+#lwSlider { 
+	height:260px;
+	position:relative;
+}
+#lwSlider .viewport { 
+	float: left; 
+	width: 970px;
+	height:260px; 
+	overflow: hidden; 
+	position: relative; 
+	left:5px;
+}
+#lwSlider .buttons { 
+	display: block; 
+	margin: 0 0 0 0; 
+	position:absolute;
+	top:-58px;
+	right:30px;
+	background:url(../images/sliderArrows.png) no-repeat left top;
+	width:22px;
+	height:28px;
+	cursor:pointer;
+	text-indent:-9999px;
+}
+#lwSlider .next { 
+	margin: 0; 
+	background:url(../images/sliderArrows.png) no-repeat right top; 
+	right:0; 
+}
+#lwSlider .disable { 
+	visibility: hidden; 
+}
+#lwSlider .overview { 
+	list-style: none; 
+	position: absolute; 
+	padding: 0; 
+	margin: 0; 
+	left: 0; 
+	top: 0; 
+}
+#lwSlider .overview li { 
+	float: left; 
+	margin: 0 30px 0 0; 
+	height: 260px; 
+	width: 220px; 
+}
+#lwSlider .overview li a.lwImg {
+	background:url(../images/lwBg.jpg) no-repeat left top;
+	width:210px;
+	height:90px;
+	vertical-align:middle;
+	display:block;
+	padding:5px;
+	position:relative;	
+}
+#lwSlider .overview li h3 {
+	margin:20px 5px 5px 5px;	
+}
+#lwSlider .overview li p {
+	margin:5px;	
+}
+
+/* FOOTER */
+
+#footer {
+	border-top:1px solid #1a1a1a;
+	width:100%;
+	height:40px;
+	background:#000;	
+}
+#footer #footerIn {
+	margin:0 auto;
+	width:980px;
+	height:40px;
+}
+#footer #footerIn .left {
+	line-height:40px;	
+	float:left;
+	width:180px;
+}
+#footer #footerIn .right {
+	height:40px;
+	float:right;
+	text-align:right;	
+}
+#footer #footerIn .right ul {
+	list-style-type:none;	
+	margin-top:12px;
+}
+#footer #footerIn .right ul li {
+	display:inline-block;
+	margin:0 7px;
+	float:left;
+}
+#footer #footerIn .right ul li a {
+	text-decoration:none;
+}
